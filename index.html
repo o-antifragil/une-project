@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        
+        main {
+            text-align: justify;
+        }
+        
+		body {
+			background-image: url('imagens/fundo2.png');
+			background-size: cover; /* Corrigido para cobrir toda a tela */
+			background-repeat: no-repeat; /* Impede que a imagem se repita */
+			background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+			font-family: 'Times New Roman', serif;
+			margin: 0; /* Remove a margem padrão do body */
+			height: 100vh; /* Garante que o body ocupe a altura total da viewport */
+		}
+
+		.cabecalho {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px 20px;
+			background-color: rgba(255, 255, 255, 0.8); /* Adiciona um fundo semi-transparente ao cabeçalho */
+		}
+		.cabecalho img {
+			max-height: 50px; /* Limita a altura da imagem do logo */
+		}
+		.cabecalho nav a {
+			text-decoration: none;
+			color: black;
+			margin: 0 10px;
+		}
+        .capa {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .texto {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <div>
+            <img src="imagens/logo.png">
+        </div>
+        <nav>
+            <a href="index.html">Home |</a>
+            <a href="quem-somos.html">Quem Somos |</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <img src="imagens/capa.png" class="capa">
+        </div>
+        <div>
+            <h2>Sobre a Universidade</h2>
+        </div>
+
+        <div>
+            <p>
+                Lorem <strong>Ipsum</strong> is simply <em>dummy</em> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <p>
+                Lorem <strong>Ipsum</strong> is simply <em>dummy</em> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+        </div>
+        <div>
+            <h4 class="texto">Todos os direitos reservados</h4>
+        </div>
+    </main>
+</body>
+</html>

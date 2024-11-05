@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UNES - Contato</title>
+	<style>
+		body {
+			background-image: url('imagens/fundo2.png');
+			background-size: cover; /* Corrigido para cobrir toda a tela */
+			background-repeat: no-repeat; /* Impede que a imagem se repita */
+			background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+			font-family: 'Times New Roman', serif;
+			margin: 0; /* Remove a margem padrão do body */
+			height: 100vh; /* Garante que o body ocupe a altura total da viewport */
+		}
+		.cabecalho {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px 20px;
+			background-color: rgba(255, 255, 255, 0.8); /* Adiciona um fundo semi-transparente ao cabeçalho */
+		}
+		.cabecalho img {
+			max-height: 50px; /* Limita a altura da imagem do logo */
+		}
+		.cabecalho nav a {
+			text-decoration: none;
+			color: black;
+			margin: 0 10px;
+		}
+		.cabecalho nav a:hover {
+			text-decoration: underline;
+		}
+		.texto {
+			text-align: center;
+		}
+		main {
+			text-align: justify;
+			padding: 20px; /* Adiciona padding para o conteúdo principal */
+			background-color: rgba(255, 255, 255, 0.8); /* Adiciona um fundo semi-transparente ao conteúdo principal */
+			margin: 10px;
+			border-radius: 10px; /* Adiciona bordas arredondadas ao conteúdo principal */
+		}
+	</style>
+</head>
+<body>
+	<header class="cabecalho">
+		<div>
+			<img src="imagens/logo.png" alt="Logo">
+		</div>
+		<nav>
+			<a href="index.html">Home</a> |
+			<a href="quem-somos.html">Quem Somos</a> |
+			<a href="contato.html">Contato</a>
+		</nav>
+	</header>
+	<main>
+		<div>
+			<p>
+				Lorem <strong>Ipsum</strong> is simply <em>dummy</em> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+			</p>
+		</div>
+		<br>
+		<div>
+			<form>
+				<label for="email">E-mail:</label><br>
+				<input type="email" id="email" name="email"><br><br>
+				
+				<label for="localidade">Localidade:</label><br>
+				<select id="localidade" name="localidade">
+					<option>SP</option>
+					<option>RJ</option>
+					<option>MG</option>
+					<option>PR</option>
+					<option>SC</option>
+				</select><br><br>
+				
+				<label for="assunto">Assunto:</label><br>
+				<input type="text" id="assunto" name="assunto"><br><br>
+				
+				<label for="descricao">Descrição:</label><br>
+				<textarea id="descricao" name="descricao"></textarea><br><br>
+				
+				<input type="submit" value="Enviar">
+			</form>
+		</div>
+		<br><br>
+		<div>
+			<h4 class="texto">Todos os direitos reservados</h4>
+		</div>
+	</main>	
+</body>
+</html>

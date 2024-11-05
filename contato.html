@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>UNES - Contato</title>
+	<style>
+
+		body {
+            background-image: url('imagens/fundo2.png');
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: block;
+            font-family: 'Times New Roman', serif;
+        }
+		.cabecalho {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+		.texto {
+			text-align: center;
+		}
+		main {
+			text-align: justify;
+		}
+	</style>
+</head>
+
+<body>
+	<header class="cabecalho">
+        <div>
+            <img src="imagens/logo.png">
+        </div>
+        <nav>
+            <a href="index.html">Home |</a>
+            <a href="quem-somos.html">Quem Somos |</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+	<main>
+		<div>
+			<p>
+				Lorem <strong>Ipsum</strong> is simply <em>dummy</em> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+			</p>
+		</div>
+		<br>
+		<div>
+			<form>
+				E-mail:<br>
+				<input type="text" name="e-mail">
+				<br><br>
+				Localidade: <br>
+				<select>
+					<option>SP</option>
+					<option>RJ</option>
+					<option>MG</option>
+					<option>PR</option>
+					<option>SC</option>
+				</select>
+				<br>
+				<br>
+				Assunto: <br>
+				<input type="text" name="assunto"><br><br>
+				Descrição: <br>
+				<textarea></textarea><br>
+				<input type="submit" value="enviar">
+			</form>
+		</div>
+		<br><br>
+		<div>
+			<h4 class="texto">Todos os direitos reservados</h4>
+		</div>
+	</main>	
+</body>
+</html>
